@@ -33,6 +33,21 @@ The whole journey resembled a lot what I went through when I created my color th
     "editor.fontLigatures": true
     ```
 
+> [!NOTE]
+> Some IDE/THEMES won't let the italics work for specific elements of code, to enable that you can add following config in your json config:
+```
+"editor.tokenColorCustomizations": {
+    "textMateRules": [
+        {
+            "scope": ["comment", "keyword", "storage", "entity.name.function"],
+            "settings": {
+                "fontStyle": "italic"
+            }
+        }
+    ]
+}
+```
+
 ## Major Version History
 
 For a complete list of changes, see the release notes on [Releases](https://github.com/psudo-dev/psudofont-liga-mono/releases).
